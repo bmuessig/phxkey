@@ -21,7 +21,7 @@
 
 #include "sha1.h"
 
-#define VERSION "1.0"
+#define VERSION "1.1"
 #define YEAR "2018"
 #define AUTHOR "0xbmuessig"
 #define DEFAULT_OUTPUT_NAME "./crypto.key"
