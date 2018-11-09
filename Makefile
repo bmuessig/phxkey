@@ -22,10 +22,10 @@ BINARY=phxkey
 
 # Uncomment lines below to compile for MS-Windows
 # Leave them commented-out to compile for *NIX
-CC=i686-w64-mingw32-gcc
-CCARGS=
-LDARGS=-s -static
-BINARY=phxkey.exe
+#CC=i686-w64-mingw32-gcc
+#CCARGS=
+#LDARGS=-s -static
+#BINARY=phxkey.exe
 
 .PHONY: clean all test
 
@@ -49,6 +49,6 @@ phxkey.o: phxkey.c phxkey.h errors.h sigs.h
 
 sha1.o: sha1.c sha1.h
 	$(CC) $(CCARGS) -c -o $@ $<
-	
+
 sigs.o: sigs.c sigs.h
 	$(CC) $(CCARGS) -c -o $@ $<
