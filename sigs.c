@@ -85,6 +85,8 @@ int signatureRead(unsigned int index, int doCopyArrays, SIGNATURE* targetSignatu
 	{
 		memcpy(targetSignature->fileHash, fileHashes[index], FILE_HASH_SIZE);
 		memcpy(targetSignature->keyHash, keyHashes[index], KEY_HASH_SIZE);
+		
+		// ATTENTION: replace memcpy with strncpy as soon as possible!
 		memcpy(targetSignature->sourceName, sourceNames[index], SOURCE_NAME_SIZE);
 	}
 	
