@@ -102,7 +102,7 @@ int main(int argc, char **argv)
 	}
 	
 	// Print the gained info
-	fprintf(stderr, "Info: Input file is 0x%x bytes long and it's SHA1 is: ", fileSize);
+	fprintf(stderr, "Info: Input file is 0x%lx bytes long and it's SHA1 is: ", fileSize);
 	for (ptr = 0; ptr < 20; ptr++)
 		fprintf(stderr, "%02x", fileShaCtx.buf[ptr]);
 	fprintf(stderr, "\n");
